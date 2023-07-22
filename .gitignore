@@ -6,9 +6,6 @@
 
 .env
 
-
-
-
 # Logs
 logs
 *.log
