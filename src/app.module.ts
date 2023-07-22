@@ -14,7 +14,7 @@ import { JoiValidationSchema } from './config/joi.validation';
   imports: [
     ConfigModule.forRoot({
       load:[ EnvConfiguration ],
-       
+      validationSchema: JoiValidationSchema,      
     }), //Se debe colocar al inicio para poder configurar las variables de entorno   
     ServeStaticModule.forRoot({
       rootPath: join(__dirname,'..','public'), 
